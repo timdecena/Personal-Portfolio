@@ -1,0 +1,62 @@
+.layout-container {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+}
+
+.sidebar {
+    background-color: #1a1a2e;
+    width: 20%; /* Fixed width for the sidebar */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item {
+    margin: 15px 0;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.menu-item a {
+    color: inherit; /* Inherit color from the parent */
+    text-decoration: none; /* Remove underline */
+    padding: 10px;
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    transition: background-color 0.4s ease, color 0.4s ease; /* Smooth transition */
+}
+
+/* Hover effect for menu items */
+.menu-item a:hover {
+    color: white; /* Change text to white on hover */
+    background-color: rgba(0, 123, 255, 0.2); /* Light blue background on hover */
+}
+
+/* Active effect for the current page */
+.menu-item a.active {
+    background-color: #1381ff; /* Solid blue background for active state */
+    color: white; /* Ensure text color is white */
+    border-radius: 10px;
+}
+
+/* Content area styles */
+.content-area {
+    width: 80%; /* Occupies the remaining space next to the sidebar */
+    padding: 50px;
+    overflow-y: auto; /* Scrollable if content exceeds the viewport */
+    display: flex; /* Added for flex properties */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: add a background to the content area for readability */
+    border-radius: 10px; /* Optional: rounded corners */
+}

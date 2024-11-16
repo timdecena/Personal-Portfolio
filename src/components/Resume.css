@@ -1,0 +1,80 @@
+.resume-container {
+    min-height: 100vh; /* Ensures the container takes at least the full height of the viewport */
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+
+
+         
+}
+
+.resume-header {
+    text-align: center;
+    background-color: #001f66;
+    color: white;
+    padding: 20px;
+}
+
+.resume-header h1 {
+    font-size: 36px;
+}
+
+.resume-header h2 {
+    font-size: 24px;
+}
+
+.resume-body {
+    display: flex;
+    margin-top: 20px;
+    max-height: calc(100vh - 100px); /* Adjust based on the height of the header */
+    overflow-y: auto; /* Enables vertical scrolling if content exceeds max height */
+}
+
+.resume-left {
+    width: 30%;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+.resume-right {
+    width: 70%;
+    padding: 20px;
+}
+
+h3 {
+    border-bottom: 2px solid #001f66;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+p, ul {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.projects-section {
+    margin-top: 80px; /* Adjust the value as needed */
+}

@@ -1,0 +1,103 @@
+/* About.css */
+
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow content to wrap if necessary */
+    height: auto; /* Remove fixed height to allow scrolling */
+    min-height: 100vh; /* Ensure it still covers at least the full viewport */
+    width: 100%; /* Full width of the viewport */
+    color: white;
+    background-color: rgba(26, 26, 46, 0.9);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.about-left {
+    flex: 1; /* Take up one part of the flex container */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.display-image {
+    position: relative; /* Moves with the flow of the page */
+    top: -100px; /* Adjusts its position relative to where it appears */
+    left: 10px; /* Adjusts its position horizontally relative to its original spot */
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.profile-pic {
+    border-radius: 10%; /* Slightly rounded corners for the image */
+    width: 250px; /* Set a fixed width for the square image */
+    height: 250px; /* Set a fixed height for the square image */
+    object-fit: cover; /* Ensures the image covers the space without distortion */
+    box-shadow: 0 8px 20px rgba(173, 216, 230, 0.6);
+}
+
+.about-right {
+    flex: 1; /* Take up two parts of the flex container */
+    padding-left: 50px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for text */
+    border-radius: 0px; /* Rounded corners */
+    padding: 10px; /* Some padding for spacing */
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #007bff;
+}
+
+
+
+.download-cv {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.download-cv:hover {
+    background-color: #0056b3;
+}
+
+
+.details-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px; /* Adds space above the list */
+    margin-left: 30px; /* Moves the list to the right */
+}
+
+.details-list li {
+    margin-bottom: 10px;
+}
+.about-right {
+    
+    padding: 100px; /* Adjusts other inner space */
+    padding-top: 100px; /* Adds space within the container, pushing content down */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for contrast */
+    border-radius: 8px; /* Slightly rounded corners */
+    width: 60%; /* Adjust the width as needed */
+    max-width: 600px; /* Limits the maximum width */
+    color: white; /* Ensures text is visible on dark backgrounds */
+}

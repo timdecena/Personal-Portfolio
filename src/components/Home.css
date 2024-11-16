@@ -1,0 +1,205 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden; /* Prevent scrollbar */
+}
+
+
+
+.sidebar {
+    background-color: #1a1a2e;
+    width: 20%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-item {
+    margin: 15px 0;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.menu-item.active {
+    background-color: #007bff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+.greeting {
+    font-size: 44px; /* Slightly larger for more prominence */
+    font-family: 'Poppins', sans-serif; /* Poppins is clean and modern */
+    font-weight: 600; /* Bold but not too heavy */
+    color: #ffffff; /* Darker color for better readability */
+    text-align: center; /* Center-aligns the greeting */
+    margin-bottom: 10px; /* Adds spacing below */
+    letter-spacing: 1.9px; /* Adds space between letters for a cleaner look */
+}
+
+.description {
+    font-size: 18px; /* Decent size for paragraph text */
+    font-family: 'Open Sans', sans-serif; /* Open Sans is clean and highly readable */
+    font-weight: 400; /* Regular weight for balance */
+    line-height: 1.8; /* Provides better readability with line spacing */
+    color: #d3d3d3; /* Softer gray color for the text */
+    text-align: center; /* Center-aligns the description */
+    margin-top: 10px;
+    max-width: 800px; /* Restricts the width for cleaner text block */
+    padding: 0 20px; /* Adds padding on mobile devices */
+}
+.highlighted-text {
+    color: #0f272b; /* Light blue color */
+    font-weight: 700; /* Slightly bolder for emphasis */
+    text-shadow: 0 0 10px rgba(24, 247, 255, 0.7), /* Outer glow */
+                 0 0 20px rgba(24, 247, 255, 0.7), /* More spread */
+                 0 0 30px rgba(24, 247, 255, 0.7); /* Faded glow */
+}
+
+
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+
+
+
+.social-links a {
+    margin: 0 10px;
+    display: inline-block;
+    border-radius: 50%; /* Make the container circular */
+    border: 1px solid rgb(0, 255, 242); /* Add a small border around the icon */
+    width: 60px; /* Adjust the size of the icon container */
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, border-color 0.3s ease; /* Add smooth transition for animation */
+}
+
+.social-icon {
+    width: 40px; /* Adjust the size of the icon itself */
+    height: 40px;
+    border-radius: 50%; /* Make the icon circular */
+    background-color: white; /* Set the background color to white */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Ensure the icon is centered */
+}
+
+/* Hover effect */
+.social-links a:hover {
+    transform: scale(1.2); /* Scale the icon when hovering */
+    border-color: #007bff; /* Change border color on hover */
+}
+.profile-pic-container {
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    overflow: hidden; /* Ensure any overflow is hidden */
+    box-shadow: 0 8px 20px rgba(173, 216, 230, 0.6); /* Adds shadow to the container */
+}
+
+.profile-pic {
+    border-radius: 50%; /* Makes the image circular */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire area */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scaling and shadow */
+    position: relative;
+    z-index: 2; /* Keeps the image above the pseudo-element */
+}
+
+/* Blue circle effect using pseudo-element */
+.profile-pic-container::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    height: 250px;
+    border: 3px solid transparent; /* Start with a transparent border */
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(1); /* Start at normal size */
+    transition: border-color 0.4s ease, transform 0.4s ease; /* Smooth transition for border and scale */
+    z-index: 1; /* Ensure it is behind the image */
+}
+
+/* Hover effect for the blue circle */
+.profile-pic-container:hover::before {
+    border-color: hsl(210, 100%, 50%); /* Blue border on hover */
+    transform: translate(-50%, -50%) scale(1.2); /* Slightly enlarge the circle */
+}
+
+.profile-pic-container:hover .profile-pic {
+    transform: scale(1.2); /* Slightly enlarge the profile picture */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Add shadow to the profile picture */
+}
+
+
+.home-container {
+    height: 100vh; /* Full height of the viewport */
+    width: 100%; /* Full width of the viewport */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center; /* Center the content horizontally */
+    height: 100vh; /* Full height of the viewport */
+    background-image: url('./assets/homebackground.webp'); /* Your GIF path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+
+
+.dp-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px; /* Adds space below the picture */
+    margin-top: 40px; /* Adds space above the picture */
+}
+
+.dp-square {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 5px; /* Slight rounding of corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dp-square:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center; /* Center content vertically */
+    flex-grow: 1; /* Allow the main content to grow and fill available space */
+}
+
+
+
+
