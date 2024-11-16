@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './Layout.css'; // External CSS for styling
-import profilePic from './assets/profilepic.jpg'; // Assuming you use the provided image
+import '../styling/Layout.css'; // External CSS for styling
+import profilePic from '../assets/profilepic.jpg'; // Assuming you use the provided image
 
 const Layout = ({ children }) => {
     return (

@@ -1,8 +1,8 @@
 // About.js
 import React from 'react';
-import './About.css';
-import backgroundPic from './assets/backgroundpic.jpg'; // Placeholder image
-import displayImage from './assets/displayimage.jpg'; // Ensure the correct path
+import '../styling/About.css';
+import backgroundPic from '../assets/backgroundpic.jpg'; // Placeholder image
+import displayImage from '../assets/displayimage.jpg'; // Ensure the correct path
 
 const About = () => {
     return (

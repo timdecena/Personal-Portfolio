@@ -1,9 +1,9 @@
 import React from 'react';
-import './Home.css'; // Your CSS file for styles
-import facebookIcon from './assets/facebook.svg'; // Replace with your actual image name
-import githubIcon from './assets/github.svg';     // Replace with your actual image name
-import linkedIcon from './assets/linkedin.svg';
-import dp from './assets/dp.jpg'
+import '../styling/Home.css'; // Your CSS file for styles
+import facebookIcon from '../assets/facebook.svg'; // Replace with your actual image name
+import githubIcon from '../assets/github.svg';     // Replace with your actual image name
+import linkedIcon from '../assets/linkedin.svg';
+import dp from '../assets/dp.jpg'
 
 const Home = () => {
     return (
