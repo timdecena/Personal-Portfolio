@@ -15,6 +15,8 @@ const Home = () => {
 
 
             <div className="main-content">
+
+                
                 <h1 className="greeting">
                     Hi, I am <span className="highlighted-text">Anthony Decena</span>
                 </h1>

@@ -5,6 +5,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Layout from './components/Layout';
 import Resume from './components/Resume'
+import Portfolios from './components/Portfolios';
 import './App.css'; // Global styles including layout
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/resume" element={<Resume />} />
+                    <Route path="/portfolios" element={<Portfolios/>} />
                 </Routes>
             </Layout>
         </Router>
